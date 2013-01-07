@@ -20,6 +20,12 @@ group :assets do
   gem "uglifier", ">= 1.0.3"
 end
 
+group :production do
+  gem 'mysql'
+  gem 'unicorn'
+end
+
+
 gem "jquery-rails"
 gem "rails-backbone"
 gem "inherited_resources"
