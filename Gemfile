@@ -21,7 +21,7 @@ group :assets do
 end
 
 group :production do
-  gem 'mysql'
+  gem 'mysql', '2.8.1'
   gem 'unicorn'
 end
 
