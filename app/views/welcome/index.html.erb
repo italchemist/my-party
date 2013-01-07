@@ -1,0 +1,9 @@
+<div class="loading container">Loading...</div>
+
+<div id="initial" data-party-id="<%= params[:party_id]%>"></div>
+
+<%= content_tag "div", "", id: "activities", :class => "container", data: { collection: Activity.where(:party_id => params[:party_id]).find(:all, :order => "[order]") } %>
+<%= content_tag "div", "", id: "parties", :class => "container", data: { collection: Party.all } %>
+
+<div id="party" class="container"></div>
+<div id="activity" class="container"></div>

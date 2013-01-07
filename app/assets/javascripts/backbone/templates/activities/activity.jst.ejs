@@ -1,0 +1,16 @@
+<li class="activity-badge thumbnail" data-id="<%=id%>">
+  <span>
+    <span class="label label-inverse"><%= name %></span>
+    <%= duration %> mins.
+    <br><br>
+    <p><%= description %></p>
+  </span>
+
+  <span>
+    <div class="btn-group">
+      <a class="link btn btn-mini" href="/parties/<%= party_id %>/activities/<%= id %>">Show
+      <a class="link btn btn-mini" href="/parties/<%= party_id %>/activities/<%= id %>/edit">Edit
+      <a class="destroy btn btn-danger btn-mini" href="/parties/<%= party_id %>/activities/<%= id %>/destroy">Destroy</a>
+    </div>
+  </span>
+</li>
